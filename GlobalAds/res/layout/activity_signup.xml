@@ -1,0 +1,85 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fillViewport="true" >
+    
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/activity_signup_layout" >
+	
+	    <TextView
+	        android:id="@+id/activity_signup_caption"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginTop="25dp"
+	        android:text="@string/activity_signup_caption_text"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="@color/activity_signup_title_fontcolor"
+	        android:textStyle="bold"
+	        tools:context=".MainActivity" />
+	    
+	    <EditText
+	        android:id="@+id/activity_signup_edit_login"
+	        style="@style/screen_margins"
+	        android:layout_below="@id/activity_signup_caption"
+	        android:background="@drawable/edittext_background"
+	        android:hint="@string/activity_signup_edit_login_text"
+	        android:inputType="text" />
+	    
+	    <EditText
+	        android:id="@+id/activity_signup_edit_email"
+	        style="@style/screen_margins"
+	        android:layout_below="@id/activity_signup_edit_login"
+	        android:background="@drawable/edittext_background"
+	        android:hint="@string/activity_signup_edit_email_text"
+	        android:inputType="textEmailAddress" />
+	    
+	    <EditText
+	        android:id="@+id/activity_signup_edit_password"
+	        style="@style/screen_margins"
+	        android:layout_below="@id/activity_signup_edit_email"
+	        android:background="@drawable/edittext_background"
+	        android:hint="@string/activity_signup_edit_password_text"
+	        android:inputType="textPassword" />
+	
+	    <EditText
+	        android:id="@+id/activity_signup_edit_confirmpass"
+	        style="@style/screen_margins"
+	        android:layout_below="@id/activity_signup_edit_password"
+	        android:background="@drawable/edittext_background"
+	        android:hint="@string/activity_signup_edit_confirmpass_text"
+	        android:inputType="textPassword" />
+	
+	    <Spinner
+	        android:id="@+id/activity_signup_spin_country"
+	        style="@style/screen_margins"
+	        android:layout_below="@+id/activity_signup_edit_confirmpass" 
+	        />
+	    
+	    <Spinner
+	        android:id="@+id/activity_signup_spin_sex"
+	        style="@style/screen_margins"
+	        android:layout_below="@+id/activity_signup_spin_country" 
+	        />
+	    
+	    <Button
+	        android:id="@+id/activity_signup_button_accept"
+	        style="@style/screen_margins"
+	        android:layout_below="@id/activity_signup_spin_sex"
+	        android:background="@drawable/activity_signup_button_accept"
+	        android:height="50dp"
+	        android:onClick="onButtonAcceptClick"
+	        android:text="@string/activity_signup_button_accept_text"
+	        android:textColor="@color/activity_signup_button_accept_fontcolor"
+	        android:textSize="20dp"
+	        android:textStyle="bold" />
+	    
+	</RelativeLayout>
+	
+</ScrollView>

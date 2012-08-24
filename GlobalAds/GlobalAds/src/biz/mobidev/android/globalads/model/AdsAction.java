@@ -16,7 +16,16 @@ public class AdsAction {
 	private String mEnds;
 	private double mRating;
 	private String mType;
+	private int mTypeView;
 	
+	public int getTypeView() {
+		return mTypeView;
+	}
+
+	public void setTypeView(int typeView) {
+		mTypeView = typeView;
+	}
+
 	public AdsAction() {
 		super();
 		// TODO Auto-generated constructor stub

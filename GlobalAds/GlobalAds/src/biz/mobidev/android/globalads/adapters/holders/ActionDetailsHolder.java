@@ -15,9 +15,10 @@ public class ActionDetailsHolder {
 	TextView mEndsView;
 	TextView mRatingView;
 	TextView mTypeView;
+	View mAdsView;
 	
 	public void createHolder(View adsView){
-
+		mAdsView = adsView;
 		mPicture = (ImageView)adsView.findViewById(R.id.item_actions_list_image);
 		mOfferView = (TextView)adsView.findViewById(R.id.item_actions_list_text_offer);
 		mCompanyView = (TextView)adsView.findViewById(R.id.item_actions_list_text_company);  
@@ -26,7 +27,6 @@ public class ActionDetailsHolder {
 		mRatingView = (TextView)adsView.findViewById(R.id.item_actions_list_text_rating);
 		mTypeView = (TextView)adsView.findViewById(R.id.item_actions_list_text_type);
 	}
-	
 	public void setData(AdsAction item) {
 		
 		mPicture.setImageResource(item.getPicture());
@@ -36,5 +36,6 @@ public class ActionDetailsHolder {
 		mEndsView.setText(item.getEnds());
 		mRatingView.setText(String.format("%.1f", item.getRating()));
 		mTypeView.setText(item.getType());
+
 	}
 }

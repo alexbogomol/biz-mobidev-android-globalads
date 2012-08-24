@@ -8,7 +8,7 @@
 	    xmlns:tools="http://schemas.android.com/tools"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:background="@drawable/activity_login_layout" >
+	    android:background="@drawable/activity_login_layout" android:paddingLeft="10dip" android:paddingRight="10dip">
 	
 	    <TextView
 	        android:id="@+id/activity_login_caption"
@@ -56,19 +56,19 @@
 	        android:id="@+id/activity_login_button_login"
 	        style="@style/screen_margins"
 	        android:layout_width="match_parent"
-	        android:layout_below="@+id/activity_login_check_showpassword"
 	        android:background="@drawable/activity_login_button_login"
 	        android:height="50dp"
 	        android:onClick="onButtonLoginClick"
 	        android:text="@string/activity_login_button_login_text"
 	        android:textColor="@color/activity_login_button_login_fontcolor"
 	        android:textSize="20dp"
-	        android:textStyle="bold" />
-	
+	        android:textStyle="bold" android:layout_alignParentBottom="false" 
+	        android:layout_above="@+id/activity_login_button_signup"/>
+	
 	    <Button
 	        android:id="@+id/activity_login_button_signup"
 	        style="@style/screen_margins"
-	        android:layout_below="@id/activity_login_button_login"
+	        android:layout_alignParentBottom="true"
 	        android:background="@drawable/activity_login_button_signup"
 	        android:height="50dp"
 	        android:onClick="onButtonSignUpClick"

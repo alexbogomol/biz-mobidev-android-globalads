@@ -10,7 +10,7 @@ import android.app.Application;
 
 public class GlobalAdsApp extends Application {
 	
-	private static GlobalAdsApp singleton;
+	private static GlobalAdsApp instance;
 	private List<Account> mAccounts;
 	private List<AdsAction> mActionsList;
 	private Account mCurrentUser;
@@ -19,7 +19,7 @@ public class GlobalAdsApp extends Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		singleton = this;
+		instance = this;
 		
 		createUsersCollection();
 		createActionsCollection();
@@ -43,6 +43,7 @@ public class GlobalAdsApp extends Application {
 			newItem.setEnds("To: <End date>");
 			newItem.setRating(itemsNumber - i);
 			newItem.setType("<Type>");
+			newItem.setTypeView(i % 2);
 			mActionsList.add(newItem);
 		}
 	}
@@ -71,11 +72,11 @@ public class GlobalAdsApp extends Application {
 	}
 	
 	public static GlobalAdsApp getInstance() {
-		return singleton;
+		return instance;
 	}
 
-	public ArrayList<AdsAction> getActionsList() {
-		return (ArrayList)mActionsList;
+	public List<AdsAction> getActionsList() {
+		return mActionsList;
 	}
 	
 	public AccountHandler getAccountHandler() {

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
-    android:padding="5dp" android:background="@drawable/item_actions_list_background_odd">
+    android:padding="5dp" android:background="@drawable/item_actions_list_background_even">
 
     <ImageView
         android:id="@+id/item_actions_list_image"

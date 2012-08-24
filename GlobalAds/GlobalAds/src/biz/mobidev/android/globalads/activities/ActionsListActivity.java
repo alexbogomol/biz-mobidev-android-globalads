@@ -1,6 +1,7 @@
 package biz.mobidev.android.globalads.activities;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import biz.mobidev.android.globalads.GlobalAdsApp;
 import biz.mobidev.android.globalads.R;
@@ -16,17 +17,17 @@ import android.widget.ListView;
 public class ActionsListActivity extends Activity {
 	
 	private ListView listView;
-	private ArrayList<AdsAction> actionsList;
+	private List<AdsAction> actionsList;
 	private ActionsListAdapter actListAdapter;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         
-        buildActivityFromApplicationContent();
+        initGUI();
     }
 
-	private void buildActivityFromApplicationContent() {
+	private void initGUI() {
 		
 		// Inflate our view
     	setContentView(R.layout.activity_actions_list);

@@ -81,6 +81,15 @@ public final class R {
         public static final int item_actions_list_ratebox_layout=0x7f020011;
     }
     public static final class id {
+        public static final int LinearLayout1=0x7f09000a;
+        public static final int View01=0x7f09000f;
+        public static final int View02=0x7f090011;
+        public static final int View03=0x7f090013;
+        public static final int View04=0x7f090015;
+        public static final int View05=0x7f090017;
+        public static final int View06=0x7f090019;
+        public static final int View07=0x7f09001b;
+        public static final int View08=0x7f09000b;
         public static final int activity_actions_list_actions_list=0x7f090000;
         public static final int activity_actions_list_button_account=0x7f090001;
         public static final int activity_actions_list_button_businesses=0x7f090002;
@@ -91,28 +100,30 @@ public final class R {
         public static final int activity_login_check_showpassword=0x7f090007;
         public static final int activity_login_edit_login=0x7f090005;
         public static final int activity_login_edit_password=0x7f090006;
-        public static final int activity_signup_button_accept=0x7f090011;
-        public static final int activity_signup_caption=0x7f09000a;
-        public static final int activity_signup_edit_confirmpass=0x7f09000e;
-        public static final int activity_signup_edit_email=0x7f09000c;
-        public static final int activity_signup_edit_login=0x7f09000b;
-        public static final int activity_signup_edit_password=0x7f09000d;
-        public static final int activity_signup_spin_country=0x7f09000f;
-        public static final int activity_signup_spin_sex=0x7f090010;
-        public static final int item_actions_list_image=0x7f090012;
-        public static final int item_actions_list_text_company=0x7f090015;
-        public static final int item_actions_list_text_dateends=0x7f090017;
-        public static final int item_actions_list_text_datestarts=0x7f090016;
-        public static final int item_actions_list_text_offer=0x7f090013;
-        public static final int item_actions_list_text_rating=0x7f090014;
-        public static final int item_actions_list_text_type=0x7f090018;
-        public static final int menu_settings=0x7f090019;
+        public static final int activity_signup_button_accept=0x7f09001a;
+        public static final int activity_signup_caption=0x7f09000c;
+        public static final int activity_signup_edit_confirmpass=0x7f090014;
+        public static final int activity_signup_edit_email=0x7f090010;
+        public static final int activity_signup_edit_login=0x7f09000e;
+        public static final int activity_signup_edit_password=0x7f090012;
+        public static final int activity_signup_spin_country=0x7f090016;
+        public static final int activity_signup_spin_sex=0x7f090018;
+        public static final int item_actions_list_image=0x7f09001c;
+        public static final int item_actions_list_text_company=0x7f09001f;
+        public static final int item_actions_list_text_dateends=0x7f090021;
+        public static final int item_actions_list_text_datestarts=0x7f090020;
+        public static final int item_actions_list_text_offer=0x7f09001d;
+        public static final int item_actions_list_text_rating=0x7f09001e;
+        public static final int item_actions_list_text_type=0x7f090022;
+        public static final int menu_settings=0x7f090023;
+        public static final int view1=0x7f09000d;
     }
     public static final class layout {
         public static final int activity_actions_list=0x7f030000;
         public static final int activity_login=0x7f030001;
         public static final int activity_signup=0x7f030002;
         public static final int item_actions_list=0x7f030003;
+        public static final int item_actions_list2=0x7f030004;
     }
     public static final class menu {
         public static final int activity_actions_list=0x7f080000;
@@ -159,5 +170,6 @@ public final class R {
     public static final class style {
         public static final int AppTheme=0x7f070000;
         public static final int screen_margins=0x7f070001;
+        public static final int styleText=0x7f070002;
     }
 }

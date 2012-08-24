@@ -5,10 +5,12 @@
     <style name="screen_margins">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:layout_marginRight">20dp</item>
-        <item name="android:layout_marginTop">5dp</item>
-        <item name="android:layout_marginBottom">5dp</item>
+
+
     </style>
     
+    <style name="styleText" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/item_actions_list_textview_company_fontcolor</item>
+        <item name="android:textSize">20dp</item>
+    </style>
 </resources>
